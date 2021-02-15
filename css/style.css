@@ -6,6 +6,14 @@
   margin: 0 auto;
 }
 
+.font_raleway {
+  font-family: 'Raleway';
+}
+
+.font_lato {
+  font-family: 'Lato';
+}
+
 /* header */
 .header {
   background-color: #fff;
@@ -41,13 +49,12 @@
 
 /* main */
 .main {
-  background-color: #f2f2f2;
   width: 100%;
 }
 
 /* theme */
 .theme {
-  font-family: 'Raleway';
+  background-color: #f2f2f2;
   padding: 250px 0;
 }
 
@@ -91,13 +98,11 @@
 
 .section_theme {
   color: #fff;
-  font-family: 'Raleway';
   font-size: 24px;
 }
 
 .section_text {
   color: #fff;
-  font-family: 'Lato';
   font-size: 20px;
   line-height: 25px;
   margin-top: 35px;
@@ -105,11 +110,15 @@
 }
 
 /* article */
+.article {
+  background-color: #f2f2f2;
+  padding: 60px 0 70px;
+}
+
 .article_theme {
   color: #333;
-  font-family: 'Raleway';
   font-size: 24px;
-  padding: 60px 0 40px;
+  margin-bottom: 40px;
 }
 
 .article_images {
@@ -138,13 +147,12 @@
 
 .article_contents {
   font-size: 0;
-  padding: 90px 0 70px;
+  margin-top: 90px;
 }
 
 .article_text {
   color: #333;
   display: inline-block;
-  font-family: 'Lato';
   font-size: 20px;
   width: 580px;
 }
@@ -168,17 +176,13 @@
 /* section_skills */
 .section_skills {
   background-color: #4e4e4e;
+  padding: 70px 0 100px;
 }
 
 .skills_theme {
   color: #fff;
-  font-family: 'Raleway';
   font-size: 24px;
-  padding: 70px 0 50px;
-}
-
-.skills_images {
-  padding-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .skills_contents {
@@ -192,13 +196,13 @@
 
 .skills_text {
   color: #fff;
-  font-family: 'Lato';
   font-size: 16px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /* nav */
 .nav {
+  background-color: #f2f2f2;
   padding: 200px 0;
 }
 
@@ -228,5 +232,4 @@
 
 .footer_text {
   color: #fff;
-  font-family: 'Lato';  
 }
