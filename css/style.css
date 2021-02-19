@@ -84,7 +84,6 @@ body {
 }
 
 .iphone_image {
-  width: 208px;
   margin-left: 100px;
 }
 
@@ -134,7 +133,6 @@ body {
   opacity: 1;
 }
 
-.ourLatestWork_images li:nth-child(-n+1),
 .ourLatestWork_images li:nth-child(3n+1) {
   margin-left: 0;
 }
@@ -240,4 +238,129 @@ body {
 
 .footer_text {
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger_menu {
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    height: 25px;
+    width: 40px;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+  }
+  
+  .hamburger_menu span,
+  .hamburger_menu span:before,
+  .hamburger_menu span:after {
+    background-color: #ddd;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    position: absolute;
+  }
+  
+  .hamburger_menu span::before {
+    bottom: 8px;
+  }
+  
+  .hamburger_menu span::after {
+    top: 8px;
+  }
+  
+  .header_button {
+    background-color: transparent;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .bolt_theme {
+    padding: 160px 0 130px;
+  }
+
+  .main_theme {
+    font-size: 80px;
+  }
+
+  .sns {
+    padding: 50px 0;
+  }
+
+  .sns_buttons {
+    display: block;
+  }
+
+  .sns_buttons li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  .whatWeCanDo {
+    padding-bottom: 25px;
+  }
+
+  .inner_whatWeCanDo {
+    display: block;
+  }
+  
+  .iphone_image {
+    margin-left: 0;
+  }
+
+  .whatWeCanDo_contents {
+    margin-left: 0;
+  }
+
+  .ourLatestWork_images {
+    display: block;
+  }
+
+  .ourLatestWork_images li {
+    margin: 0;
+  }
+
+  .ourLatestWork_images li:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
+  .ourLatestWork_images li:first-child {
+    margin-top: 0;
+  }
+
+  .ourLatestWork_contents {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .ourLatestWork_text {
+    margin: 0;
+    width: 100%;
+  }
+
+  .ourLatestWork_button {
+    display: inline-block;
+    margin:20px 0 0;
+  }
+
+  .ourSkills_images {
+    display: block;
+  }
+
+  .ourSkills_images li {
+    margin: 88px 0 0;
+  }
+
+  .ourSkills_images li:first-child {
+    margin-top: 0;
+  }
 }
