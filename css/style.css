@@ -6,6 +6,10 @@ body {
   font-family: 'Lato';
 }
 
+a {
+  display: inline-block;
+}
+
 .font_raleway {
   font-family: 'Raleway';
 }
@@ -38,6 +42,10 @@ body {
 
 .header_icon_color {
   color: #808080
+}
+
+.hamburger_menu {
+  display: none;
 }
 
 .header_button {
@@ -79,8 +87,7 @@ body {
 
 /* section */
 .whatWeCanDo {
-  padding-top: 50px; 
-  padding-bottom: 0; 
+  padding: 50px 0 0; 
 }
 
 .iphone_image {
@@ -124,13 +131,6 @@ body {
 .ourLatestWork_images li {
   margin-left: 100px;
   margin-top: 80px;
-  opacity: 0.7;
-  transition: opacity 0.3s linear;
-  list-style-type: none;
-}
-
-.ourLatestWork_images li:hover {
-  opacity: 1;
 }
 
 .ourLatestWork_images li:nth-child(3n+1) {
@@ -140,6 +140,17 @@ body {
 .ourLatestWork_images li:nth-child(-n+3) {
   margin-top: 0;
 }
+
+.ourLatestWork_images a {
+  opacity: 0.7;
+  transition: opacity 0.3s linear;
+  list-style-type: none;
+}
+
+.ourLatestWork_images a:hover {
+  opacity: 1;
+}
+
 
 .ourLatestWork_contents {
   font-size: 0;
@@ -240,6 +251,72 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+  
+  .whatWeCanDo {
+    padding-bottom: 25px;
+  }
+  
+  .inner_whatWeCanDo {
+    display: block;
+  }
+  
+  .iphone_image {
+    margin-left: 0;
+  }
+
+  .whatWeCanDo_contents {
+    padding-top: 0;
+    margin:20px 0 0;
+  }
+
+  .ourLatestWork_images {
+    display: block;
+  }
+  
+  .ourLatestWork_images li {
+    margin: 0;
+  }
+  
+  .ourLatestWork_images li:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+  
+  .ourLatestWork_images li:first-child {
+    margin-top: 0;
+  }
+  
+  .ourLatestWork_contents {
+    display: block;
+    margin-top: 80px;
+  }
+  
+  .ourLatestWork_text {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .ourLatestWork_button {
+    display: inline-block;
+    margin: 20px 0 0;
+  }
+  
+  .ourSkills_images {
+    display: block;
+  }
+  
+  .ourSkills_images li {
+    margin: 88px 0 0;
+  }
+  
+  .ourSkills_images li:first-child {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hamburger_menu {
     align-items: center;
@@ -274,9 +351,7 @@ body {
   }
   
   .header_button {
-    background-color: transparent;
-    font-size: 0;
-    padding: 0;
+    display: none;
   }
 
   .bolt_theme {
@@ -297,70 +372,5 @@ body {
 
   .sns_buttons li {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .inner {
-    width: 97%;
-  }
-
-  .whatWeCanDo {
-    padding-bottom: 25px;
-  }
-
-  .inner_whatWeCanDo {
-    display: block;
-  }
-  
-  .iphone_image {
-    margin-left: 0;
-  }
-
-  .whatWeCanDo_contents {
-    margin-left: 0;
-  }
-
-  .ourLatestWork_images {
-    display: block;
-  }
-
-  .ourLatestWork_images li {
-    margin: 0;
-  }
-
-  .ourLatestWork_images li:nth-child(3n+1) {
-    margin-top: 80px;
-  }
-
-  .ourLatestWork_images li:first-child {
-    margin-top: 0;
-  }
-
-  .ourLatestWork_contents {
-    display: block;
-    margin-top: 80px;
-  }
-
-  .ourLatestWork_text {
-    margin: 0;
-    width: 100%;
-  }
-
-  .ourLatestWork_button {
-    display: inline-block;
-    margin:20px 0 0;
-  }
-
-  .ourSkills_images {
-    display: block;
-  }
-
-  .ourSkills_images li {
-    margin: 88px 0 0;
-  }
-
-  .ourSkills_images li:first-child {
-    margin-top: 0;
   }
 }
